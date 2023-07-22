@@ -1,0 +1,158 @@
+/* This CSS files handles stylings of big screen devices */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Common class */
+.flex{
+    display: flex;
+}
+/* Common class */
+
+:root {
+    --orange: #ff5202;
+    --lightGrey: #a6a2a2;
+    --normalGrey: #b8b7b7;
+    --darkBlue: #262543;
+}
+/* <!-- Main Container Start --> */
+.container{
+    padding: 2rem 5rem;
+}
+/* <!-- Main Container Start --> */
+
+/* <!-- Nav bar start --> */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.logo{
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.link{
+    text-decoration: none;
+    list-style: none;
+    gap: 5rem;
+    color: var(--lightGrey);
+}
+
+.link li:hover{
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.button{
+    border: 1px solid black;
+    font-weight: bold;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+}
+
+/* <!-- Nav bar end --> */
+
+/* <!-- Content part start --> */
+.content{
+    flex-direction: row;
+    width: 100%;
+    gap: 5rem;
+    /* border: 1px solid; */
+}
+
+.content-heading{
+    font-size: 1.7rem;
+}
+
+.left-content{
+    width: 60%;
+}
+
+.left-content > div{
+    padding-bottom: 1rem;
+}
+
+.content-center{
+    font-size: large;
+    border-left: 2px solid;
+    padding: 1rem 10rem 0 1rem;
+    color: var(--lightGrey);
+    line-height: 1.8rem;
+}
+
+.content-button{
+    gap: 2rem;
+    padding-top: 2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.button-1{
+    background-color: var(--orange);
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.button-2{
+    border: 1px solid black;
+    padding: 1rem 2rem;
+}
+
+.curve-arrow{
+    position: absolute;
+    right: 6rem;
+    top: 3rem;
+}
+
+.right-content{
+    /* margin: 8% 0; */
+    border: 1px solid;
+    text-align: center;
+    width: 50%;
+    padding-top: 2rem;
+    position: relative;
+    /* min-height: 75vh; */
+}
+
+.right-content img{
+    width: 100%;
+    position: absolute;
+}
+
+.background{
+    top: 0;
+    left: 0;
+}
+
+.pattern{
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.boy{
+    top: 10vh;
+    left: 7vh;
+}
+
+.green-arrow{
+
+}
+
+.orange-arrow{
+
+}
+
+.circal{
+
+}
+/* <!-- Content part end --> */
