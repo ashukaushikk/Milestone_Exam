@@ -20,17 +20,27 @@
     --normalGrey: #b8b7b7;
     --darkBlue: #262543;
 }
-/* <!-- Main Container Start --> */
-.container{
-    padding: 2rem 5rem;
+
+/* <!-- Container-1 Start --> */
+
+.container-1, .container-2, .container-3{
+    width: 80%;
+    margin: auto;
+    height: 100%;
 }
-/* <!-- Main Container Start --> */
+
+/* <!-- Container-1 End --> */
 
 /* <!-- Nav bar start --> */
+
 .navbar{
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 4rem;
+    padding-block: 1.5rem;
+}
+
+.burger-menu{
+    display: none;
 }
 
 .logo{
@@ -40,10 +50,14 @@
     font-size: 1.5rem;
 }
 
+.logo span{
+    color: var(--darkBlue);
+}
+
 .link{
     text-decoration: none;
     list-style: none;
-    gap: 5rem;
+    gap: 2rem;
     color: var(--lightGrey);
 }
 
@@ -55,104 +69,293 @@
 .button{
     border: 1px solid black;
     font-weight: bold;
-    padding-inline: 2rem;
-    padding-block: 1rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    text-align: center;
+}
+
+.profile-img{
+    display: none;
 }
 
 /* <!-- Nav bar end --> */
 
-/* <!-- Content part start --> */
-.content{
-    flex-direction: row;
-    width: 100%;
-    gap: 5rem;
-    /* border: 1px solid; */
-}
+/* <!-- Main part start --> */
 
-.content-heading{
-    font-size: 1.7rem;
+.content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 70% 30%;
 }
 
 .left-content{
-    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.left-content > div{
-    padding-bottom: 1rem;
+.left-content h1{
+    font-size: 3.5rem;
 }
 
-.content-center{
-    font-size: large;
-    border-left: 2px solid;
-    padding: 1rem 10rem 0 1rem;
+.left-content h3{
     color: var(--lightGrey);
-    line-height: 1.8rem;
-}
-
-.content-button{
-    gap: 2rem;
-    padding-top: 2rem;
-    font-weight: bold;
-    position: relative;
-}
-
-.button-1{
-    background-color: var(--orange);
-    color: white;
-    padding: 1rem 2rem;
-}
-
-.button-2{
-    border: 1px solid black;
-    padding: 1rem 2rem;
-}
-
-.curve-arrow{
-    position: absolute;
-    right: 6rem;
-    top: 3rem;
+    border-left: 1px solid var(--lightGrey);
+    padding: 0 10rem 0 1rem;
 }
 
 .right-content{
-    /* margin: 8% 0; */
-    border: 1px solid;
-    text-align: center;
-    width: 50%;
-    padding-top: 2rem;
     position: relative;
-    /* min-height: 75vh; */
+    margin: 15% 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    min-height: 75vh;
 }
 
 .right-content img{
-    width: 100%;
     position: absolute;
 }
 
 .background{
-    top: 0;
-    left: 0;
+    width: 90%;
 }
 
-.pattern{
-    top: 0;
-    left: 0;
+.pattern {
     z-index: 2;
+    width: 32vw;
+    top: -6vh;
+    right: 1vw;
 }
-
-.boy{
-    top: 10vh;
-    left: 7vh;
+  
+.boy {
+    left: 5vw;
+    width: 20vw;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
 }
-
-.green-arrow{
-
+  
+.green-arrow {
+    bottom: 0;
+    left: 1vw;
 }
 
 .orange-arrow{
-
+    left: -4vw;
+    top: -6vh;
 }
 
-.circal{
-
+.circle {
+    bottom: 0;
+    right: 0;
 }
-/* <!-- Content part end --> */
+
+.content-button{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    column-gap: 2%;
+    height: 4rem;
+}
+
+.content-button .button-1 {
+    border: none;
+    background-color: var(--orange);
+    padding: 1rem 2rem;
+    color: #ffffff;
+}
+
+.content-button .button-2 {
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 1rem 2rem;
+}
+
+.content-button img {
+    position: absolute;
+    top: 35%;
+    right: 20%;
+    width: 20%;
+}
+
+/* <!-- Main part end --> */
+
+/* <!-- Footer part start --> */
+/* <!-- service box start --> */
+
+footer {
+    background-color: var(--darkBlue);
+    color: #fff;
+  }
+
+.service-box{
+    padding: 4rem 0rem;
+    gap: 3rem;
+    width: 100%;
+}
+
+.service-box h1{
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-top: -1rem;
+    padding-bottom: 1.5rem;
+}
+
+.service-box h2{
+    color: #ffffff;
+    padding-bottom: 0.7rem;
+}
+
+.service-box p, span{
+    color: var(--lightGrey);
+}
+
+.service-box img {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+.col:nth-child(2) img{
+    background-color: #1cd7af;
+}
+
+.col:nth-child(3) img {
+    background-color: #fc5b11;
+}
+  
+.col:nth-child(4) img {
+    background-color: #525bf1;
+}
+
+/* <!-- service box end --> */
+/* <!-- Footer part end --> */
+
+/* This css files handles stylings of mobile devices  */
+@media only screen and (max-width: 576px) {
+
+/* <!-- Header part responsive design start --> */
+
+.burger-menu, .profile-img{
+    display: block;
+}
+
+.link, .button{
+    display: none;
+}
+
+/* <!-- Header part responsive design end --> */
+
+/* <!-- main part responsive design start --> */
+
+.content{
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    margin: 2% auto;
+    height: 100%;
+}
+
+.left-content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-right: 0;
+    justify-content: left;
+}
+
+.left-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.left-content h3 {
+    font-size: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.right-content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    min-height: 50vh;
+}
+
+.right-content img {
+    object-fit: contain;
+    width: auto;
+}
+
+.right-content .background{
+    width: 60%;
+    top: -10vh;
+    left: 16vw;
+}
+
+.right-content .boy{
+    top: -10vh;
+    left: 24vw;
+}
+
+.right-content .pattern{
+    width: 65%;
+    top: -15vh;
+    left: 15vw;
+}
+
+.right-content .orange-arrow{
+    top: -15vh;
+    left: 15vw;
+}
+
+.right-content .green-arrow{
+    bottom: -15vh;
+    left: 3vw;
+}
+
+.right-content .circle{
+    right: 10vw;
+}
+
+.content-button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 0 auto 15vh auto;
+    font-size: 0.8rem;
+}
+
+.content-button .button-1, .content-button .button-2{
+    padding: 5vh;
+    width: 30vw;
+    text-align: center;
+}
+
+.content-button img {
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+    width: 20%;
+}
+
+/* <!-- main part responsive design end --> */
+
+/* footer part responsive design start */
+.service-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+.service-box .col {
+    width: 70%;
+    margin: 7% auto;
+  }
+}
+
+/* footer part responsive design end */
