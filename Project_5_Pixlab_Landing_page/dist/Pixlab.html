@@ -1,0 +1,347 @@
+<!-- Project-5 : Creating a Pixlab_landing_page of with the help of HTML and Tailwind only -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linked my CSS file here below: -->
+    <link rel="stylesheet" href="../dist/output.css">
+    <!-- Font-awesome link here below: -->
+    <script src="https://kit.fontawesome.com/a4ceb3bfd3.js" crossorigin="anonymous" ></script>
+    <!-- Google Fonts here below: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+    <title>Pixlab Landing page</title>
+    <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+</head>
+<body class="font-Poppins">
+    <!-- Now header working as a container -->
+    <header class="container mx-auto md:h-screen">
+        <!-- navbar start -->
+        <nav class="w-full border-b">
+            <!-- header container-1 start -->
+            <div class="flex justify-between items-center py-3 px-3 font-bold">
+                <div class="logo">
+                    <img src="../Assets/Logo.png" alt="logo">
+                </div>
+                <ul class="links hidden md:flex md:gap-x-10">
+                    <li><a href="#" class="hover:text-[#ff7300]">Home</a></li>
+                    <li><a href="#" class="hover:text-[#ff7300]">About Us</a></li>
+                    <li><a href="#" class="hover:text-[#ff7300]">Our App</a></li>
+                    <li><a href="#" class="hover:text-[#ff7300]">Contacts</a></li>
+                </ul>
+                
+                <div class="button md:flex md:justify-between md:gap-1 hidden">
+                    <button class="px-2 w-28 h-10 hover:text-[#ff7300]">Log In</button>
+                    <button class="px-2 w-28 h-10 font-normal text-white bg-[#ff7300] rounded-md">Sign Up</button>
+                </div>
+
+                <div class="hamburger-menu block md:hidden">
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                </div>
+            </div>
+            <!-- header container-1 end -->
+        </nav>
+        <!-- navbar end -->
+
+        <!-- hero-section start -->
+        <div class="text-xl hero-section flex flex-col md:flex-row px-3 md:px-0 md:py-10 py-0">
+            <!-- content part start -->
+            <div class="leftside md:w-[50%] flex flex-col py-10 gap-y-10">
+                <h1 class="text-4xl md:text-6xl text-[#0e0e33] font-bold">We boost <br /> growth for your <br /> statup business</h1>
+                <p>Our goal is top at the heart of creativity services industry <br /> as a digital creator. In has a after comment.</p>
+                <!-- button design start -->
+                <div class="flex items-center w-full gap-x-5 pt-9">
+                    <button class="px-2 h-12 w-[25%] text-white rounded-md bg-[#ff7300]">Get started</button>
+                    <button class="flex items-center gap-x-4 px-2">
+                        <i class="fa-solid fa-circle-play p-3 rounded-3xl border-4 border-e-0 border-t-0 border-b-0 border-[#ff7300]"></i>
+                        <span class="font-bold">Learn More</span>
+                    </button>
+                </div>
+                <!-- button design end -->
+            </div>
+            <!-- content part end -->
+            
+            <!-- image part start -->
+            <div class="right mt-10 md:mt-0 md:w-[50%] relative">
+                <img src="../assets/joyful-guy.png" alt="boy-image" class="object-contain z-10 w-[80%] absolute left-10 shadow-2x"/>
+                <div class="circle shadow-2xl w-[70%] h-[90%] rounded-full absolute bottom-0 left-[18%]"></div>
+                    <img src="../assets/Group 10.png" alt="icon" class="absolute" />
+                    <!-- Card-1 design start -->
+                    <div class="card-1 md:flex text-sm items-center gap-3 px-3 py-2 shadow-2xl md:w-[20vw] hidden absolute md:top-10 md:left-3">
+                        <div class="icon">
+                            <i class="fa-solid fa-arrow-up-right-dots fa-2xl" style="color: #010204;"></i>
+                        </div>
+                        <div class="info">
+                            <span class="font-bold">100% Business Growth</span>
+                            <div class="stats">
+                                <span><i class="fa-solid text-yellow-500 fa-star"></i></span>
+                                <span class="font-bold">4.9</span>
+                                <span class="text-[#adabab]">(1520 Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card-1 design end -->
+
+                    <!-- Card-2 design start -->
+                    <div class="card-2 md:flex text-sm items-center gap-3 px-3 py-2 shadow-2xl w-[50vw] -mt-4 md:w-[20vw] absolute md:bottom-[15%] md:-left-[15%]">
+                        <div class="info">
+                            <span class="font-bold">1000,000 Happy Clients</span>
+                            <div class="stats">
+                                <span><i class="fa-solid text-yellow-500 fa-star"></i></span>
+                                <span class="font-bold">4.9</span>
+                                <span class="text-[#adabab]">(15k Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card-2 design end -->
+            </div>
+            <!-- image part end -->
+        </div>
+        <!-- hero-section end -->
+    </header>
+    
+    <main>
+        <!-- main container-1 (Service) start -->
+        <div class="container mx-auto px-5 md:px-0 md:py-[8%] py-[15%] flex justify-center flex-col">
+            <!-- heading part start -->
+            <div class="title flex flex-col justify-center items-center py-5 md:py-2 mb-7 md:mb-0 gap-y-2">
+                <h6 class="tracking-[0.5rem] font-mono">SERVICE</h6>
+                <h1 class="text-5xl text-[#0e0e33]  font-bold">Our Vison & Our Goal</h1>
+            </div>
+            <!-- heading part end -->
+            
+            <!-- card design start -->
+            <div class="cards flex mt-[7%] mb-[5%] md:justify-between flex-col md:flex-row gap-10 md:gap-0">
+                <!-- card-1 -->
+                <div class="card-1 flex flex-col items-center w-[26%] gap-y-5 py-10 px-10 shadow-2xl rounded-3xl">
+                    <i class="fa-solid fa-chart-line fa-2xl py-8 px-6 rounded-xl text-white bg-black"></i>
+                    <h2 class="text-3xl font-bold">Graphic Design</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus, nunc dopibus laoreet dolar nec imperdiet.</p>
+                    <button class="px-2 w-36 h-12 font-normal text-white bg-[#ff7300] rounded-md">Learn More</button>
+                </div>
+
+                <!-- card-2 -->
+                <div class="card-1 flex flex-col items-center w-[26%] gap-y-5 py-10 px-10 shadow-2xl rounded-3xl">
+                    <i class="fa-solid fa-video fa-2xl py-8 px-6 rounded-xl text-white bg-black"></i>
+                    <h2 class="text-3xl font-bold">Video Editing</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus, nunc dopibus laoreet dolar nec imperdiet.</p>
+                    <button class="px-2 w-36 h-12 font-normal text-white bg-[#ff7300] rounded-md">Learn More</button>
+                </div>
+
+                <!-- card-3 -->
+                <div class="card-1 flex flex-col items-center w-[26%] gap-y-5 py-10 px-10 shadow-2xl rounded-3xl">
+                    <i class="fa-solid fa-chart-line fa-2xl py-8 px-6 rounded-xl text-white bg-black"></i>
+                    <h2 class="text-3xl font-bold">Digital Marketing</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus, nunc dopibus laoreet dolar nec imperdiet.</p>
+                    <button class="px-2 w-36 h-12 font-normal text-white bg-[#ff7300] rounded-md">Learn More</button>
+                </div>
+
+            </div>
+            <!-- card design end -->
+        </div>
+        <!-- main container-1 (Service) end -->
+
+        <!-- main container-2 (Blocks & Compenents) start -->
+        <div class="container mx-auto flex flex-col md:flex-row md:justify-between justify-center px-5 md:px-0 md:py-0 md:pb-5 py-[10%]">
+            <!-- leftside design start -->
+            <div class="w-[30%] pt-6 flex flex-col justify-between">
+                <!-- content box -->
+                <div class="flex flex-col gap-y-10">
+                    <h2 class="text-3xl text-[#363535] font-bold">Many Blocks and Components</h2>
+                    <p class="text-[#5d5d5d]">Startup Framework contain components and complex blocks which can easily be integrated into almost any design.</p>
+                </div>
+
+                <!-- Explore -->
+                <div class="button text-[#5d5d5d] border-2 border-[#e6e6e6] text-center w-[40%] rounded-3xl">
+                    <button class="h-12 font-bold rounded-md">Explore</button>
+                </div>
+            </div>
+            <!-- leftside design start -->
+
+            <!-- rightside design start -->
+            <div class="w-[60%]">
+                <img class="w-full" src="../Assets/Video Player.png" alt="video player image">
+            </div>
+            <!-- rightside design end -->
+        </div>
+        <!-- main container-2 (Blocks & Compenents) end -->
+
+        <!-- main container-3 (Testmonials) start -->
+        <div class="container mx-auto px-5 md:px-0 md:py-[6%] py-[15%] flex justify-center flex-col">
+            <!-- heading part start -->
+            <div class="title flex flex-col justify-center items-center py-5 md:py-2 mb-7 md:mb-0 gap-y-2">
+                <h6 class="tracking-[0.5rem] font-mono">TESTMONIALS</h6>
+                <h1 class="text-5xl text-[#0e0e33]  font-bold">What Clients say about us</h1>
+            </div>
+            <!-- heading part end -->
+            
+            <!-- comments box design start -->
+            <div class="grid grid-cols-[28%_28%] justify-center gap-x-24 gap-y-24 grid-rows-2 mt-[7%]">
+                <!-- row-1 start -->
+                <!-- Column-1  -->
+                <div class="col-1 flex gap-6">
+                    <div>
+                        <img class="w-60" src="../Assets/Mask.png" alt="RAYHAN CURRAN image">
+                    </div>
+                    <div class="flex flex-col gap-y-10">
+                        <p class="font-bold text-[#363535]">Get a fully retina ready site when you build with Startup Framework. Website look sharper and more gorgeous on device with retina display support</p>
+                        <span class="text-[#5d5d5d] text-sm">RAYHAN CURRAN</span>
+                    </div>
+                </div>
+                <!-- Column-2  -->
+                <div class="col-2 flex gap-6">
+                    <div>
+                        <img class="w-52" src="../Assets/Mask (1).png" alt="KAYLEY FRAME image">
+                    </div>
+                    <div class="flex flex-col gap-y-16">
+                        <p class="font-bold text-[#363535]">As a business targeting high net worth individuals, we were looking for a slick, cool and mini-malistic design for our website</p>
+                        <span class="text-[#5d5d5d] text-sm">KAYLEY FRAME</span>
+                    </div>
+                </div>
+                <!-- row-1 end -->
+                
+                <!-- row-2 start-->
+                <div class="col-1 flex gap-6">
+                    <div>
+                        <img class="w-[6.5rem]" src="../Assets/Mask (2).png" alt="GENE WHITEFIELD image">
+                    </div>
+                    <div class="flex flex-col gap-y-[49%]">
+                        <p class="font-bold text-[#363535]">The most important part of the Startup Framework is the samples</p>
+                        <span class="text-[#5d5d5d] text-sm">GENE WHITEFIELD</span>
+                    </div>
+                </div>
+                <!-- Column-2  -->
+                <div class="col-2 flex gap-6">
+                    <div>
+                        <img class="w-[7.4rem]" src="../Assets/Userpic.png" alt="ALLAN KIM image">
+                    </div>
+                    <div class="flex flex-col gap-y-16">
+                        <p class="font-bold text-[#363535]">I've built my website with Startup just in one day, and it was ready-to-go.</p>
+                        <span class="text-[#5d5d5d] text-sm">ALLAN KIM</span>
+                    </div>
+                </div>
+                <!-- row-2 end-->
+            </div>
+            <!-- comments box design start -->
+        </div>
+        <!-- main container-3 (Testmonials) end -->
+
+        <!-- main container-4 (Our Team - Meet the Team) start -->
+        <div class="container mx-auto px-5 md:px-0 md:py-0 py-[15%] flex justify-center flex-col">
+            <!-- heading part start -->
+            <div class="title flex flex-col justify-center items-center py-5 md:py-2 mb-7 md:mb-0 gap-y-2">
+                <h6 class="tracking-[0.5rem] font-mono">OUR TEAM</h6>
+                <h1 class="text-5xl text-[#0e0e33]  font-bold">Meet The Team</h1>
+            </div>
+            <!-- heading part end -->
+            
+            <!-- team-member card design start -->
+            <div class="cards flex mt-[7%] mb-[5%] md:justify-between flex-col md:flex-row gap-10 md:gap-0">
+                <!-- card-1 -->
+                <div class="card-1 border-2 flex flex-col items-center justify-between w-[30%] pt-10 gap-y-7 rounded-3xl">
+                    <img src="../Assets/Mask (3).png" alt="Vanessa Laird">
+                    <h2 class="text-2xl text-[#0e0e33] font-bold">Vanessa Laird</h2>
+                    <span class="text-center text-[#5d5d5d] tracking-widest">UI DESIGNER</span>
+                    <div class="icons pt-7 flex justify-center w-full">
+                        <div class="border-2 border-b-0 border-l-0 w-full text-center"><i class="fa-brands fa-twitter py-5 text-[#bcbcc6]"></i></div>
+                        <div class="border-t-2 w-full text-center"><i class="fa-brands fa-facebook py-5 text-[#bcbcc6]"></i></div>
+                        <div class="border-2 border-b-0 border-r-0 w-full text-center"><i class="fa-regular fa-futbol py-5 text-[#bcbcc6]"></i></div>
+                      </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="card-2 border-2 flex flex-col items-center justify-between w-[30%] pt-10 gap-y-7 rounded-3xl">
+                    <img src="../Assets/Userpic (1).png" alt="Mason Campbell image">
+                    <h2 class="text-2xl text-[#0e0e33] font-bold">Mason Campbell</h2>
+                    <span class="text-center text-[#5d5d5d] tracking-widest">UI DESIGNER</span>
+                    <div class="icons pt-7 flex justify-center w-full">
+                        <div class="border-2 border-b-0 border-l-0 w-full text-center"><i class="fa-brands fa-twitter py-5 text-[#bcbcc6]"></i></div>
+                        <div class="border-t-2 w-full text-center"><i class="fa-brands fa-facebook py-5 text-[#bcbcc6]"></i></div>
+                        <div class="border-2 border-b-0 border-r-0 w-full text-center"><i class="fa-regular fa-futbol py-5 text-[#bcbcc6]"></i></div>
+                      </div>
+                </div>
+
+                <!-- card-3 -->
+                <div class="card-3 border-2 flex flex-col items-center justify-between w-[30%] pt-10 gap-y-7 rounded-3xl">
+                    <img src="../Assets/Userpic (2).png" alt="Irea Evans image">
+                    <h2 class="text-2xl text-[#0e0e33] font-bold">Irea Evans</h2>
+                    <span class="text-center text-[#5d5d5d] tracking-widest">CLIENT MANAGER</span>
+                    <div class="icons pt-7 flex justify-center w-full">
+                        <div class="border-2 border-b-0 border-l-0 w-full text-center"><i class="fa-brands fa-twitter py-5 text-[#bcbcc6]"></i></div>
+                        <div class="border-t-2 w-full text-center"><i class="fa-brands fa-facebook py-5 text-[#bcbcc6]"></i></div>
+                        <div class="border-2 border-b-0 border-r-0 w-full text-center"><i class="fa-regular fa-futbol py-5 text-[#bcbcc6]"></i></div>
+                      </div>
+                </div>
+
+            </div>
+            <!-- team-member card design start -->
+        </div>
+        <!-- main container-4 (Our Team - Meet the Team) end -->
+
+
+        <!-- main container-5 (Our Team - Subscribe Our Newsletter) start -->
+        <div class="container mx-auto px-5 md:px-0 md:py-5 py-[15%] flex justify-center flex-col">
+            <!-- heading part start -->
+            <div class="title flex flex-col justify-center items-center py-5 md:py-2 mb-7 md:mb-0 gap-y-2">
+                <h6 class="tracking-[0.5rem] font-mono">OUR TEAM</h6>
+                <h1 class="text-5xl text-[#0e0e33]  font-bold">Subscribe Our Newsletter</h1>
+            </div>
+            <!-- heading part end -->
+            
+            <div class="container mx-auto flex flex-col md:flex-row justify-around px-5 md:px-0 md:py-[5%] py-[10%]">
+                <!-- image-part design start -->
+                <div class="w-[40%]">
+                    <img class="w-[95%]" src="../Assets/Frame.png" alt="frame image">
+                </div>
+                <!-- image-part design end -->
+
+                <!-- content-part design start -->
+                <div class="w-[55%] flex flex-col justify-evenly">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore mgna aliqua. Ut enim ad minim veniam</p>
+                    <input type="email" placeholder="Your Email here..." class="text-2xl text-black shadow-2xl py-4 px-8 border-2 rounded-3xl"/>
+                    <button class="px-2 w-[100%] h-10 font-normal text-white bg-[#FF5500] rounded-md">Subscribe Our Newsletter</button>                    
+                </div>
+                <!-- content-part design end -->
+            </div>
+        </div>
+        <!-- main container-5 (Our Team - Subscribe Our Newsletter) end -->
+    </main>
+
+    <footer class="container mx-auto mt-[5%] px-7 md:px-0">
+        <!-- main container-1 (Copyright) start -->
+        <div class="container mx-auto w-full border-b text-[gray] md:py-[2%]">
+            <!-- header container-1 start -->
+            <div class="flex items-center py-3 px-3 font-bold w-full">
+                <div class="logo">
+                    <img class="w-[60%]" src="../Assets/Logo.png" alt="logo">
+                </div>
+                <div class="flex justify-between w-full text-gray-400">
+                    <span>&copy; 2020 Epixelab. All rights reserved</span>
+                    <ul class="links hidden md:flex md:gap-x-10">
+                        <li><a href="#" class="hover:text-[#ff7300]">Portfolio</a></li>
+                        <li><a href="#" class="hover:text-[#ff7300]">How it Works</a></li>
+                        <li><a href="#" class="hover:text-[#ff7300]">Pricing</a></li>
+                        <li><a href="#" class="hover:text-[#ff7300]">About</a></li>
+                        <li><a href="#" class="hover:text-[#ff7300]">Login</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- header container-1 end -->
+        </div>
+        <!-- main container-1 (Copyright) end -->
+
+        <!-- below part container start -->
+        <div class="py-[2%] text-gray-400 pl-1">
+            <span>StartUp Framework contains components and complex blocks which can be easily be integrated into almost any design.</span>
+        </div>
+        <!-- below part container end -->
+
+
+    </footer>
+</body>
+</html>
+
