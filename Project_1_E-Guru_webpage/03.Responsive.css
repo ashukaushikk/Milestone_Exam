@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+/* This css files handles stylings of mobile devices  */
+@media only screen and (max-width: 576px) {
+
+/* <!-- Header part responsive design start --> */
+
+.burger-menu, .profile-img{
+    display: block;
+}
+
+.link, .button{
+    display: none;
+}
+
+/* <!-- Header part responsive design end --> */
+
+/* <!-- main part responsive design start --> */
+
+.content{
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    margin: 2% auto;
+    height: 100%;
+}
+
+.left-content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-right: 0;
+    justify-content: left;
+}
+
+.left-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.left-content h3 {
+    font-size: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.right-content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    min-height: 50vh;
+}
+
+.right-content img {
+    object-fit: contain;
+    width: auto;
+}
+
+.right-content .background{
+    width: 60%;
+    top: -10vh;
+    left: 16vw;
+}
+
+.right-content .boy{
+    top: -10vh;
+    left: 24vw;
+}
+
+.right-content .pattern{
+    width: 65%;
+    top: -15vh;
+    left: 15vw;
+}
+
+.right-content .orange-arrow{
+    top: -15vh;
+    left: 15vw;
+}
+
+.right-content .green-arrow{
+    bottom: -15vh;
+    left: 3vw;
+}
+
+.right-content .circle{
+    right: 10vw;
+}
+
+.content-button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 0 auto 15vh auto;
+    font-size: 0.8rem;
+}
+
+.content-button .button-1, .content-button .button-2{
+    padding: 5vh;
+    width: 30vw;
+    text-align: center;
+}
+
+.content-button img {
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+    width: 20%;
+}
+
+/* <!-- main part responsive design end --> */
+
+/* footer part responsive design start */
+.service-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+.service-box .col {
+    width: 70%;
+    margin: 7% auto;
+  }
+}
+
+/* footer part responsive design end */
